@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2B08C51840FCB7002DD471 /* BLNumbersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08AF1840FCB7002DD471 /* BLNumbersCollectionViewCell.xib */; };
+		0C2B08C61840FCB7002DD471 /* BLOptionsSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B01840FCB7002DD471 /* BLOptionsSectionHeaderView.xib */; };
+		0C2B08C71840FCB7002DD471 /* BLSymbolSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B11840FCB7002DD471 /* BLSymbolSectionHeaderView.xib */; };
+		0C2B08C81840FCB7002DD471 /* BLSymbolTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B21840FCB7002DD471 /* BLSymbolTableViewCell.xib */; };
+		0C2B08C91840FCB7002DD471 /* BLTableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B31840FCB7002DD471 /* BLTableFooterView.xib */; };
+		0C2B08CA1840FCB7002DD471 /* BLTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B41840FCB7002DD471 /* BLTableHeaderView.xib */; };
+		0C2B08CB1840FCB7002DD471 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B51840FCB7002DD471 /* MainStoryboard.storyboard */; };
+		0C2B08CC1840FCB7002DD471 /* BLNumbersCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B08B81840FCB7002DD471 /* BLNumbersCollectionViewCell.m */; };
+		0C2B08CD1840FCB7002DD471 /* BLOptionsSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B08BA1840FCB7002DD471 /* BLOptionsSectionHeaderView.m */; };
+		0C2B08CE1840FCB7002DD471 /* BLSymbolSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B08BC1840FCB7002DD471 /* BLSymbolSectionHeaderView.m */; };
+		0C2B08CF1840FCB7002DD471 /* BLSymbolTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B08BE1840FCB7002DD471 /* BLSymbolTableViewCell.m */; };
+		0C2B08D01840FCB7002DD471 /* BLTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B08C01840FCB7002DD471 /* BLTableFooterView.m */; };
+		0C2B08D11840FCB7002DD471 /* BLTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B08C21840FCB7002DD471 /* BLTableHeaderView.m */; };
+		0C2B08D21840FCB7002DD471 /* UIView+LoadFromNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B08C41840FCB7002DD471 /* UIView+LoadFromNib.m */; };
+		0C2D32A5183F785400E1838E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D32A4183F785400E1838E /* Foundation.framework */; };
+		0C2D32A7183F785400E1838E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D32A6183F785400E1838E /* CoreGraphics.framework */; };
+		0C2D32A9183F785400E1838E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D32A8183F785400E1838E /* UIKit.framework */; };
+		0C2D32AF183F785400E1838E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D32AD183F785400E1838E /* InfoPlist.strings */; };
+		0C2D32B1183F785400E1838E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D32B0183F785400E1838E /* main.m */; };
+		0C2D32B5183F785400E1838E /* BLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D32B4183F785400E1838E /* BLAppDelegate.m */; };
+		0C2D32B7183F785400E1838E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D32B6183F785400E1838E /* Images.xcassets */; };
+		0C2D32BE183F785400E1838E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D32BD183F785400E1838E /* XCTest.framework */; };
+		0C2D32BF183F785400E1838E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D32A4183F785400E1838E /* Foundation.framework */; };
+		0C2D32C0183F785400E1838E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D32A8183F785400E1838E /* UIKit.framework */; };
+		0C2D32C8183F785400E1838E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D32C6183F785400E1838E /* InfoPlist.strings */; };
+		0C2D32CA183F785400E1838E /* BLTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D32C9183F785400E1838E /* BLTableViewControllerTests.m */; };
+		0C2D32D7183F7F4800E1838E /* BLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D32D6183F7F4800E1838E /* BLTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C2D32C1183F785400E1838E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C2D3299183F785400E1838E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C2D32A0183F785400E1838E;
+			remoteInfo = BLTableViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C2B08AF1840FCB7002DD471 /* BLNumbersCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLNumbersCollectionViewCell.xib; sourceTree = "<group>"; };
+		0C2B08B01840FCB7002DD471 /* BLOptionsSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLOptionsSectionHeaderView.xib; sourceTree = "<group>"; };
+		0C2B08B11840FCB7002DD471 /* BLSymbolSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSymbolSectionHeaderView.xib; sourceTree = "<group>"; };
+		0C2B08B21840FCB7002DD471 /* BLSymbolTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSymbolTableViewCell.xib; sourceTree = "<group>"; };
+		0C2B08B31840FCB7002DD471 /* BLTableFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLTableFooterView.xib; sourceTree = "<group>"; };
+		0C2B08B41840FCB7002DD471 /* BLTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLTableHeaderView.xib; sourceTree = "<group>"; };
+		0C2B08B51840FCB7002DD471 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0C2B08B71840FCB7002DD471 /* BLNumbersCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLNumbersCollectionViewCell.h; sourceTree = "<group>"; };
+		0C2B08B81840FCB7002DD471 /* BLNumbersCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLNumbersCollectionViewCell.m; sourceTree = "<group>"; };
+		0C2B08B91840FCB7002DD471 /* BLOptionsSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLOptionsSectionHeaderView.h; sourceTree = "<group>"; };
+		0C2B08BA1840FCB7002DD471 /* BLOptionsSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLOptionsSectionHeaderView.m; sourceTree = "<group>"; };
+		0C2B08BB1840FCB7002DD471 /* BLSymbolSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSymbolSectionHeaderView.h; sourceTree = "<group>"; };
+		0C2B08BC1840FCB7002DD471 /* BLSymbolSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSymbolSectionHeaderView.m; sourceTree = "<group>"; };
+		0C2B08BD1840FCB7002DD471 /* BLSymbolTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSymbolTableViewCell.h; sourceTree = "<group>"; };
+		0C2B08BE1840FCB7002DD471 /* BLSymbolTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSymbolTableViewCell.m; sourceTree = "<group>"; };
+		0C2B08BF1840FCB7002DD471 /* BLTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTableFooterView.h; sourceTree = "<group>"; };
+		0C2B08C01840FCB7002DD471 /* BLTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTableFooterView.m; sourceTree = "<group>"; };
+		0C2B08C11840FCB7002DD471 /* BLTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTableHeaderView.h; sourceTree = "<group>"; };
+		0C2B08C21840FCB7002DD471 /* BLTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTableHeaderView.m; sourceTree = "<group>"; };
+		0C2B08C31840FCB7002DD471 /* UIView+LoadFromNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LoadFromNib.h"; sourceTree = "<group>"; };
+		0C2B08C41840FCB7002DD471 /* UIView+LoadFromNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LoadFromNib.m"; sourceTree = "<group>"; };
+		0C2D32A1183F785400E1838E /* BLTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C2D32A4183F785400E1838E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0C2D32A6183F785400E1838E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0C2D32A8183F785400E1838E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0C2D32AC183F785400E1838E /* BLTableViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLTableViewController-Info.plist"; sourceTree = "<group>"; };
+		0C2D32AE183F785400E1838E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0C2D32B0183F785400E1838E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C2D32B2183F785400E1838E /* BLTableViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLTableViewController-Prefix.pch"; sourceTree = "<group>"; };
+		0C2D32B3183F785400E1838E /* BLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAppDelegate.h; sourceTree = "<group>"; };
+		0C2D32B4183F785400E1838E /* BLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAppDelegate.m; sourceTree = "<group>"; };
+		0C2D32B6183F785400E1838E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0C2D32BC183F785400E1838E /* BLTableViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLTableViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C2D32BD183F785400E1838E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0C2D32C5183F785400E1838E /* BLTableViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLTableViewControllerTests-Info.plist"; sourceTree = "<group>"; };
+		0C2D32C7183F785400E1838E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0C2D32C9183F785400E1838E /* BLTableViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLTableViewControllerTests.m; sourceTree = "<group>"; };
+		0C2D32D5183F7F4800E1838E /* BLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTableViewController.h; sourceTree = "<group>"; };
+		0C2D32D6183F7F4800E1838E /* BLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C2D329E183F785400E1838E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2D32A7183F785400E1838E /* CoreGraphics.framework in Frameworks */,
+				0C2D32A9183F785400E1838E /* UIKit.framework in Frameworks */,
+				0C2D32A5183F785400E1838E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C2D32B9183F785400E1838E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2D32BE183F785400E1838E /* XCTest.framework in Frameworks */,
+				0C2D32C0183F785400E1838E /* UIKit.framework in Frameworks */,
+				0C2D32BF183F785400E1838E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C2B08AE1840FCB7002DD471 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0C2B08AF1840FCB7002DD471 /* BLNumbersCollectionViewCell.xib */,
+				0C2B08B01840FCB7002DD471 /* BLOptionsSectionHeaderView.xib */,
+				0C2B08B11840FCB7002DD471 /* BLSymbolSectionHeaderView.xib */,
+				0C2B08B21840FCB7002DD471 /* BLSymbolTableViewCell.xib */,
+				0C2B08B31840FCB7002DD471 /* BLTableFooterView.xib */,
+				0C2B08B41840FCB7002DD471 /* BLTableHeaderView.xib */,
+				0C2B08B51840FCB7002DD471 /* MainStoryboard.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0C2B08B61840FCB7002DD471 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C2B08B71840FCB7002DD471 /* BLNumbersCollectionViewCell.h */,
+				0C2B08B81840FCB7002DD471 /* BLNumbersCollectionViewCell.m */,
+				0C2B08B91840FCB7002DD471 /* BLOptionsSectionHeaderView.h */,
+				0C2B08BA1840FCB7002DD471 /* BLOptionsSectionHeaderView.m */,
+				0C2B08BB1840FCB7002DD471 /* BLSymbolSectionHeaderView.h */,
+				0C2B08BC1840FCB7002DD471 /* BLSymbolSectionHeaderView.m */,
+				0C2B08BD1840FCB7002DD471 /* BLSymbolTableViewCell.h */,
+				0C2B08BE1840FCB7002DD471 /* BLSymbolTableViewCell.m */,
+				0C2B08BF1840FCB7002DD471 /* BLTableFooterView.h */,
+				0C2B08C01840FCB7002DD471 /* BLTableFooterView.m */,
+				0C2B08C11840FCB7002DD471 /* BLTableHeaderView.h */,
+				0C2B08C21840FCB7002DD471 /* BLTableHeaderView.m */,
+				0C2B08C31840FCB7002DD471 /* UIView+LoadFromNib.h */,
+				0C2B08C41840FCB7002DD471 /* UIView+LoadFromNib.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C2D3298183F785400E1838E = {
+			isa = PBXGroup;
+			children = (
+				0C2D32AA183F785400E1838E /* BLTableViewController */,
+				0C2D32C3183F785400E1838E /* BLTableViewControllerTests */,
+				0C2D32A3183F785400E1838E /* Frameworks */,
+				0C2D32A2183F785400E1838E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C2D32A2183F785400E1838E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D32A1183F785400E1838E /* BLTableViewController.app */,
+				0C2D32BC183F785400E1838E /* BLTableViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C2D32A3183F785400E1838E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D32A4183F785400E1838E /* Foundation.framework */,
+				0C2D32A6183F785400E1838E /* CoreGraphics.framework */,
+				0C2D32A8183F785400E1838E /* UIKit.framework */,
+				0C2D32BD183F785400E1838E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C2D32AA183F785400E1838E /* BLTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0C2B08AE1840FCB7002DD471 /* UI */,
+				0C2B08B61840FCB7002DD471 /* Views */,
+				0C2D32B3183F785400E1838E /* BLAppDelegate.h */,
+				0C2D32B4183F785400E1838E /* BLAppDelegate.m */,
+				0C2D32D5183F7F4800E1838E /* BLTableViewController.h */,
+				0C2D32D6183F7F4800E1838E /* BLTableViewController.m */,
+				0C2D32B6183F785400E1838E /* Images.xcassets */,
+				0C2D32AB183F785400E1838E /* Supporting Files */,
+			);
+			path = BLTableViewController;
+			sourceTree = "<group>";
+		};
+		0C2D32AB183F785400E1838E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D32AC183F785400E1838E /* BLTableViewController-Info.plist */,
+				0C2D32AD183F785400E1838E /* InfoPlist.strings */,
+				0C2D32B0183F785400E1838E /* main.m */,
+				0C2D32B2183F785400E1838E /* BLTableViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C2D32C3183F785400E1838E /* BLTableViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D32C9183F785400E1838E /* BLTableViewControllerTests.m */,
+				0C2D32C4183F785400E1838E /* Supporting Files */,
+			);
+			path = BLTableViewControllerTests;
+			sourceTree = "<group>";
+		};
+		0C2D32C4183F785400E1838E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C2D32C5183F785400E1838E /* BLTableViewControllerTests-Info.plist */,
+				0C2D32C6183F785400E1838E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C2D32A0183F785400E1838E /* BLTableViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C2D32CD183F785400E1838E /* Build configuration list for PBXNativeTarget "BLTableViewController" */;
+			buildPhases = (
+				0C2D329D183F785400E1838E /* Sources */,
+				0C2D329E183F785400E1838E /* Frameworks */,
+				0C2D329F183F785400E1838E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLTableViewController;
+			productName = BLTableViewController;
+			productReference = 0C2D32A1183F785400E1838E /* BLTableViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C2D32BB183F785400E1838E /* BLTableViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C2D32D0183F785400E1838E /* Build configuration list for PBXNativeTarget "BLTableViewControllerTests" */;
+			buildPhases = (
+				0C2D32B8183F785400E1838E /* Sources */,
+				0C2D32B9183F785400E1838E /* Frameworks */,
+				0C2D32BA183F785400E1838E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C2D32C2183F785400E1838E /* PBXTargetDependency */,
+			);
+			name = BLTableViewControllerTests;
+			productName = BLTableViewControllerTests;
+			productReference = 0C2D32BC183F785400E1838E /* BLTableViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C2D3299183F785400E1838E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BL;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = example;
+				TargetAttributes = {
+					0C2D32BB183F785400E1838E = {
+						TestTargetID = 0C2D32A0183F785400E1838E;
+					};
+				};
+			};
+			buildConfigurationList = 0C2D329C183F785400E1838E /* Build configuration list for PBXProject "BLTableViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0C2D3298183F785400E1838E;
+			productRefGroup = 0C2D32A2183F785400E1838E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C2D32A0183F785400E1838E /* BLTableViewController */,
+				0C2D32BB183F785400E1838E /* BLTableViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C2D329F183F785400E1838E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2B08CA1840FCB7002DD471 /* BLTableHeaderView.xib in Resources */,
+				0C2D32AF183F785400E1838E /* InfoPlist.strings in Resources */,
+				0C2B08C81840FCB7002DD471 /* BLSymbolTableViewCell.xib in Resources */,
+				0C2D32B7183F785400E1838E /* Images.xcassets in Resources */,
+				0C2B08C91840FCB7002DD471 /* BLTableFooterView.xib in Resources */,
+				0C2B08C71840FCB7002DD471 /* BLSymbolSectionHeaderView.xib in Resources */,
+				0C2B08CB1840FCB7002DD471 /* MainStoryboard.storyboard in Resources */,
+				0C2B08C61840FCB7002DD471 /* BLOptionsSectionHeaderView.xib in Resources */,
+				0C2B08C51840FCB7002DD471 /* BLNumbersCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C2D32BA183F785400E1838E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2D32C8183F785400E1838E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C2D329D183F785400E1838E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2B08CD1840FCB7002DD471 /* BLOptionsSectionHeaderView.m in Sources */,
+				0C2B08D11840FCB7002DD471 /* BLTableHeaderView.m in Sources */,
+				0C2D32B5183F785400E1838E /* BLAppDelegate.m in Sources */,
+				0C2B08CC1840FCB7002DD471 /* BLNumbersCollectionViewCell.m in Sources */,
+				0C2D32B1183F785400E1838E /* main.m in Sources */,
+				0C2D32D7183F7F4800E1838E /* BLTableViewController.m in Sources */,
+				0C2B08D21840FCB7002DD471 /* UIView+LoadFromNib.m in Sources */,
+				0C2B08CE1840FCB7002DD471 /* BLSymbolSectionHeaderView.m in Sources */,
+				0C2B08D01840FCB7002DD471 /* BLTableFooterView.m in Sources */,
+				0C2B08CF1840FCB7002DD471 /* BLSymbolTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C2D32B8183F785400E1838E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2D32CA183F785400E1838E /* BLTableViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C2D32C2183F785400E1838E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C2D32A0183F785400E1838E /* BLTableViewController */;
+			targetProxy = 0C2D32C1183F785400E1838E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C2D32AD183F785400E1838E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C2D32AE183F785400E1838E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0C2D32C6183F785400E1838E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C2D32C7183F785400E1838E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C2D32CB183F785400E1838E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0C2D32CC183F785400E1838E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C2D32CE183F785400E1838E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLTableViewController/BLTableViewController-Prefix.pch";
+				INFOPLIST_FILE = "BLTableViewController/BLTableViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0C2D32CF183F785400E1838E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLTableViewController/BLTableViewController-Prefix.pch";
+				INFOPLIST_FILE = "BLTableViewController/BLTableViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0C2D32D1183F785400E1838E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BLTableViewController.app/BLTableViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLTableViewController/BLTableViewController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BLTableViewControllerTests/BLTableViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0C2D32D2183F785400E1838E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BLTableViewController.app/BLTableViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLTableViewController/BLTableViewController-Prefix.pch";
+				INFOPLIST_FILE = "BLTableViewControllerTests/BLTableViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C2D329C183F785400E1838E /* Build configuration list for PBXProject "BLTableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C2D32CB183F785400E1838E /* Debug */,
+				0C2D32CC183F785400E1838E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C2D32CD183F785400E1838E /* Build configuration list for PBXNativeTarget "BLTableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C2D32CE183F785400E1838E /* Debug */,
+				0C2D32CF183F785400E1838E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C2D32D0183F785400E1838E /* Build configuration list for PBXNativeTarget "BLTableViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C2D32D1183F785400E1838E /* Debug */,
+				0C2D32D2183F785400E1838E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C2D3299183F785400E1838E /* Project object */;
+}

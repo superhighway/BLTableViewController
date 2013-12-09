@@ -1,0 +1,2 @@
+@interface BLTableFooterView : UIView
+@end
