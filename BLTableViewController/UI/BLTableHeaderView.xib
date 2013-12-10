@@ -117,7 +117,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SlZ-6f-Byl" customClass="BLButton">
-                    <rect key="frame" x="86" y="104" width="70" height="30"/>
+                    <rect key="frame" x="85" y="104" width="71" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.55000000000000004" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -129,7 +129,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4ye-u5-gRm" customClass="BLButton">
-                    <rect key="frame" x="164" y="104" width="70" height="30"/>
+                    <rect key="frame" x="164" y="104" width="71" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.55000000000000004" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>

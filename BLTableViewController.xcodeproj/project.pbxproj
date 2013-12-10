@@ -33,6 +33,7 @@
 		0C2D32C0183F785400E1838E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D32A8183F785400E1838E /* UIKit.framework */; };
 		0C2D32D7183F7F4800E1838E /* BLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D32D6183F7F4800E1838E /* BLTableViewController.m */; };
 		0C56BB111856E3C40040B4D3 /* BLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C56BB101856E3C40040B4D3 /* BLButton.m */; };
+		0C56BB141856E7A90040B4D3 /* UIImage+BL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C56BB131856E7A90040B4D3 /* UIImage+BL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		0C2D32D6183F7F4800E1838E /* BLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTableViewController.m; sourceTree = "<group>"; };
 		0C56BB0F1856E3C40040B4D3 /* BLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLButton.h; sourceTree = "<group>"; };
 		0C56BB101856E3C40040B4D3 /* BLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLButton.m; sourceTree = "<group>"; };
+		0C56BB121856E7A90040B4D3 /* UIImage+BL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BL.h"; sourceTree = "<group>"; };
+		0C56BB131856E7A90040B4D3 /* UIImage+BL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 				0C2D32D6183F7F4800E1838E /* BLTableViewController.m */,
 				0C2D32B6183F785400E1838E /* Images.xcassets */,
 				0C2D32AB183F785400E1838E /* Supporting Files */,
+				0C56BB121856E7A90040B4D3 /* UIImage+BL.h */,
+				0C56BB131856E7A90040B4D3 /* UIImage+BL.m */,
 			);
 			path = BLTableViewController;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				0C2D32D7183F7F4800E1838E /* BLTableViewController.m in Sources */,
 				0C2B08D21840FCB7002DD471 /* UIView+LoadFromNib.m in Sources */,
 				0C2B08CE1840FCB7002DD471 /* BLSymbolSectionHeaderView.m in Sources */,
+				0C56BB141856E7A90040B4D3 /* UIImage+BL.m in Sources */,
 				0C2B08D01840FCB7002DD471 /* BLTableFooterView.m in Sources */,
 				0C2B08CF1840FCB7002DD471 /* BLSymbolTableViewCell.m in Sources */,
 			);
