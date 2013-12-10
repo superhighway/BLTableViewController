@@ -19,21 +19,21 @@
                         <color key="backgroundColor" red="0.0" green="0.83465442519999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAPL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YL5-Em-Dnx">
-                        <rect key="frame" x="10" y="6" width="80" height="17"/>
+                        <rect key="frame" x="14" y="6" width="80" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Inc." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" id="xKY-m0-8nx">
-                        <rect key="frame" x="10" y="22" width="102" height="15"/>
+                        <rect key="frame" x="14" y="22" width="102" height="15"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" id="wQF-Gz-LfF">
-                        <rect key="frame" x="121" y="0.0" width="199" height="44"/>
+                        <rect key="frame" x="131" y="0.0" width="189" height="44"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="X8t-q8-bUI">
@@ -49,12 +49,12 @@
                         </connections>
                     </collectionView>
                     <view contentMode="scaleToFill" id="Ta2-ZV-2jO">
-                        <rect key="frame" x="120" y="0.0" width="1" height="44"/>
+                        <rect key="frame" x="129" y="0.0" width="1" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <view contentMode="scaleToFill" id="rkq-kK-kmz">
-                        <rect key="frame" x="121" y="0.0" width="1" height="44"/>
+                        <rect key="frame" x="130" y="0.0" width="1" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

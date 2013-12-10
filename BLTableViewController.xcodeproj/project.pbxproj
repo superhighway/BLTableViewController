@@ -31,9 +31,8 @@
 		0C2D32BE183F785400E1838E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D32BD183F785400E1838E /* XCTest.framework */; };
 		0C2D32BF183F785400E1838E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D32A4183F785400E1838E /* Foundation.framework */; };
 		0C2D32C0183F785400E1838E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D32A8183F785400E1838E /* UIKit.framework */; };
-		0C2D32C8183F785400E1838E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D32C6183F785400E1838E /* InfoPlist.strings */; };
-		0C2D32CA183F785400E1838E /* BLTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D32C9183F785400E1838E /* BLTableViewControllerTests.m */; };
 		0C2D32D7183F7F4800E1838E /* BLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D32D6183F7F4800E1838E /* BLTableViewController.m */; };
+		0C56BB111856E3C40040B4D3 /* BLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C56BB101856E3C40040B4D3 /* BLButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,11 +80,10 @@
 		0C2D32B6183F785400E1838E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0C2D32BC183F785400E1838E /* BLTableViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLTableViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2D32BD183F785400E1838E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0C2D32C5183F785400E1838E /* BLTableViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLTableViewControllerTests-Info.plist"; sourceTree = "<group>"; };
-		0C2D32C7183F785400E1838E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0C2D32C9183F785400E1838E /* BLTableViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLTableViewControllerTests.m; sourceTree = "<group>"; };
 		0C2D32D5183F7F4800E1838E /* BLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTableViewController.h; sourceTree = "<group>"; };
 		0C2D32D6183F7F4800E1838E /* BLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTableViewController.m; sourceTree = "<group>"; };
+		0C56BB0F1856E3C40040B4D3 /* BLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLButton.h; sourceTree = "<group>"; };
+		0C56BB101856E3C40040B4D3 /* BLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +141,8 @@
 				0C2B08C21840FCB7002DD471 /* BLTableHeaderView.m */,
 				0C2B08C31840FCB7002DD471 /* UIView+LoadFromNib.h */,
 				0C2B08C41840FCB7002DD471 /* UIView+LoadFromNib.m */,
+				0C56BB0F1856E3C40040B4D3 /* BLButton.h */,
+				0C56BB101856E3C40040B4D3 /* BLButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				0C2D32AA183F785400E1838E /* BLTableViewController */,
-				0C2D32C3183F785400E1838E /* BLTableViewControllerTests */,
 				0C2D32A3183F785400E1838E /* Frameworks */,
 				0C2D32A2183F785400E1838E /* Products */,
 			);
@@ -199,24 +198,6 @@
 				0C2D32AD183F785400E1838E /* InfoPlist.strings */,
 				0C2D32B0183F785400E1838E /* main.m */,
 				0C2D32B2183F785400E1838E /* BLTableViewController-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0C2D32C3183F785400E1838E /* BLTableViewControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				0C2D32C9183F785400E1838E /* BLTableViewControllerTests.m */,
-				0C2D32C4183F785400E1838E /* Supporting Files */,
-			);
-			path = BLTableViewControllerTests;
-			sourceTree = "<group>";
-		};
-		0C2D32C4183F785400E1838E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0C2D32C5183F785400E1838E /* BLTableViewControllerTests-Info.plist */,
-				0C2D32C6183F785400E1838E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -313,7 +294,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C2D32C8183F785400E1838E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +309,7 @@
 				0C2D32B5183F785400E1838E /* BLAppDelegate.m in Sources */,
 				0C2B08CC1840FCB7002DD471 /* BLNumbersCollectionViewCell.m in Sources */,
 				0C2D32B1183F785400E1838E /* main.m in Sources */,
+				0C56BB111856E3C40040B4D3 /* BLButton.m in Sources */,
 				0C2D32D7183F7F4800E1838E /* BLTableViewController.m in Sources */,
 				0C2B08D21840FCB7002DD471 /* UIView+LoadFromNib.m in Sources */,
 				0C2B08CE1840FCB7002DD471 /* BLSymbolSectionHeaderView.m in Sources */,
@@ -341,7 +322,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C2D32CA183F785400E1838E /* BLTableViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,14 +340,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0C2D32AE183F785400E1838E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0C2D32C6183F785400E1838E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C2D32C7183F785400E1838E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

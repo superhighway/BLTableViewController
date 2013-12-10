@@ -8,8 +8,13 @@
         <scene sceneID="aUN-u9-ldt">
             <objects>
                 <navigationController definesPresentationContext="YES" id="EZL-mB-7gh" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rw3-zX-ZwM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="rw3-zX-ZwM">
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="7ng-CT-4tP" kind="relationship" relationship="rootViewController" id="Z9d-ex-ey3"/>
