@@ -5,6 +5,8 @@
 #import "BLTableHeaderView.h"
 #import "BLTableFooterView.h"
 #import "BLOptionsSectionHeaderView.h"
+#import "BLTableDataOption.h"
+
 
 @interface BLTableViewController () <
     UITableViewDataSource,
@@ -25,12 +27,36 @@
     self.sectionHeaderView = [BLSymbolSectionHeaderView loadInstanceFromNib];
     self.optionsSectionHeaderView = [BLOptionsSectionHeaderView loadInstanceFromNib];
 
-    self.tableDataHeaderTexts = @[@"Symbol", @"Last", @"Chg", @"Volume", @"52 wk", @"Day Gain", @[@"P&L", @"SGD"], @[@"Value", @"SGD"], @[@"Cost", @"SGD"], @"Position"];
+    self.tableDataHeaderTexts = @[
+                                  @"Symbol",
+                                  @"Last",
+                                  @"Chg",
+                                  @"Volume",
+                                  @"52 wk",
+                                  @"Day Gain",
+                                  @[@"P&L", @"SGD"],
+                                  @[@"Value", @"SGD"],
+                                  @[@"Cost", @"SGD"],
+                                  @"Position"
+                                 ];
+
+    self.tableDataOptions = @[
+                              [[BLTableDataOption alloc] init],
+                              [[BLTableDataOption alloc] init],
+                              [[BLTableDataOption alloc] init],
+                              [[BLTableDataOption alloc] init],
+                              [[BLTableDataOption alloc] initWithCellIdentifier:@"BLDotChartCollectionViewCell" sortable:NO],
+                              [[BLTableDataOption alloc] init],
+                              [[BLTableDataOption alloc] init],
+                              [[BLTableDataOption alloc] init],
+                              [[BLTableDataOption alloc] init],
+                              [[BLTableDataOption alloc] init]
+                             ];
     self.tableData = @[
-  @[@[@1, @"AAPL:US", @"Apple Inc"], @[@"519.80 USD", @"09:10"], @[@"-0.26%", @"-1.34"], @"7.990M", [[UIView alloc] initWithFrame:CGRectZero], @[@"-0.26%", @"-25.05"], @[@"+13.50%", @"+1,159.38"], @"9,746.25", @"8,586.88", @[@"15", @"2 lots"]],
-  @[@[@(-1), @"VOD:LN", @"Vodafone Group PLC"], @[@"519.80 USD", @"09:10"], @[@"-0.26%", @"-1.34"], @"7.990M", [[UIView alloc] initWithFrame:CGRectZero], @[@"-0.26%", @"-25.05"], @[@"+13.50%", @"+1,159.38"], @"9,746.25", @"8,586.88", @[@"15", @"2 lots"]],
-  @[@[@0, @"AAPL:US", @"Apple Inc"], @[@"519.80 USD", @"09:10"], @[@"-0.26%", @"-1.34"], @"7.990M", [[UIView alloc] initWithFrame:CGRectZero], @[@"-0.26%", @"-25.05"], @[@"+13.50%", @"+1,159.38"], @"9,746.25", @"8,586.88", @[@"15", @"2 lots"]],
-  @[@[@0.8, @"AAPL:US", @"Apple Inc"], @[@"519.80 USD", @"09:10"], @[@"-0.26%", @"-1.34"], @"7.990M", [[UIView alloc] initWithFrame:CGRectZero], @[@"-0.26%", @"-25.05"], @[@"+13.50%", @"+1,159.38"], @"9,746.25", @"8,586.88", @[@"15", @"2 lots"]]
+  @[@[@1, @"AAPL:US", @"Apple Inc"], @[@"519.80 USD", @"09:10"], @[@"-0.26%", @"-1.34"], @"7.990M", @80, @[@"-0.26%", @"-25.05"], @[@"+13.50%", @"+1,159.38"], @"9,746.25", @"8,586.88", @[@"15", @"2 lots"]],
+  @[@[@(-1), @"VOD:LN", @"Vodafone Group PLC"], @[@"519.80 USD", @"09:10"], @[@"-0.26%", @"-1.34"], @"7.990M", @80, @[@"-0.26%", @"-25.05"], @[@"+13.50%", @"+1,159.38"], @"9,746.25", @"8,586.88", @[@"15", @"2 lots"]],
+  @[@[@0, @"AAPL:US", @"Apple Inc"], @[@"519.80 USD", @"09:10"], @[@"-0.26%", @"-1.34"], @"7.990M", @80, @[@"-0.26%", @"-25.05"], @[@"+13.50%", @"+1,159.38"], @"9,746.25", @"8,586.88", @[@"15", @"2 lots"]],
+  @[@[@0.8, @"AAPL:US", @"Apple Inc"], @[@"519.80 USD", @"09:10"], @[@"-0.26%", @"-1.34"], @"7.990M", @80, @[@"-0.26%", @"-25.05"], @[@"+13.50%", @"+1,159.38"], @"9,746.25", @"8,586.88", @[@"15", @"2 lots"]]
                   ];
 
     [self.symbolsTableView registerNib:[UINib nibWithNibName:@"BLSymbolTableViewCell" bundle:nil] forCellReuseIdentifier:@"BLSymbolTableViewCell"];
@@ -61,6 +87,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BLSymbolTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BLSymbolTableViewCell" forIndexPath:indexPath];
+    cell.rowOption = self.tableDataOptions;
     cell.rowData = self.tableData[indexPath.row];
     __weak typeof(self) weakSelf = self;
     __weak BLSymbolTableViewCell *weakCell = cell;

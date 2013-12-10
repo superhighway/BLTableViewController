@@ -1,3 +1,4 @@
+#import "BLTableDataOption.h"
 #import "BLNumbersCollectionViewCell.h"
 #import "BLSymbolTableViewCell.h"
 
@@ -6,10 +7,21 @@
     UICollectionViewDelegate,
     UICollectionViewDelegateFlowLayout
 >
-
+@property (nonatomic, strong) NSString *defaultNumbersCellIdentifier;
 @end
 
 @implementation BLSymbolTableViewCell
+
+- (void)setRowOption:(NSArray *)rowOption {
+    _rowOption = rowOption;
+
+    for (BLTableDataOption *opt in rowOption) {
+        if (opt.cellIdentifier) {
+            [self.numbersCollectionView registerNib:[UINib nibWithNibName:opt.cellIdentifier bundle:nil]
+                         forCellWithReuseIdentifier:opt.cellIdentifier];
+        }
+    }
+}
 
 - (void)setRowData:(NSArray *)rowData {
     _rowData = rowData;
@@ -21,7 +33,9 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self.numbersCollectionView registerNib:[UINib nibWithNibName:@"BLNumbersCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"BLNumbersCollectionViewCell"];
+    self.defaultNumbersCellIdentifier = @"BLNumbersCollectionViewCell";
+    [self.numbersCollectionView registerNib:[UINib nibWithNibName:self.defaultNumbersCellIdentifier bundle:nil]
+                 forCellWithReuseIdentifier:self.defaultNumbersCellIdentifier];
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -32,7 +46,10 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    BLNumbersCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"BLNumbersCollectionViewCell" forIndexPath:indexPath];
+    NSString *cellIdentifier = [self.rowOption[indexPath.row] cellIdentifier];
+    if (!cellIdentifier) cellIdentifier = self.defaultNumbersCellIdentifier;
+
+    BLNumbersCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     [cell bindCellData:self.rowData[indexPath.row+1]];
     return cell;
 }

@@ -34,6 +34,9 @@
 		0C2D32D7183F7F4800E1838E /* BLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D32D6183F7F4800E1838E /* BLTableViewController.m */; };
 		0C56BB111856E3C40040B4D3 /* BLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C56BB101856E3C40040B4D3 /* BLButton.m */; };
 		0C56BB141856E7A90040B4D3 /* UIImage+BL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C56BB131856E7A90040B4D3 /* UIImage+BL.m */; };
+		0C56BB1618571DCE0040B4D3 /* BLDotChartCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C56BB1518571DCE0040B4D3 /* BLDotChartCollectionViewCell.xib */; };
+		0C56BB1918571F820040B4D3 /* BLDotChartCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C56BB1818571F820040B4D3 /* BLDotChartCollectionViewCell.m */; };
+		0C56BB1C185727760040B4D3 /* BLTableDataOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C56BB1B185727760040B4D3 /* BLTableDataOption.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,11 @@
 		0C56BB101856E3C40040B4D3 /* BLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLButton.m; sourceTree = "<group>"; };
 		0C56BB121856E7A90040B4D3 /* UIImage+BL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BL.h"; sourceTree = "<group>"; };
 		0C56BB131856E7A90040B4D3 /* UIImage+BL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BL.m"; sourceTree = "<group>"; };
+		0C56BB1518571DCE0040B4D3 /* BLDotChartCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLDotChartCollectionViewCell.xib; sourceTree = "<group>"; };
+		0C56BB1718571F820040B4D3 /* BLDotChartCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDotChartCollectionViewCell.h; sourceTree = "<group>"; };
+		0C56BB1818571F820040B4D3 /* BLDotChartCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDotChartCollectionViewCell.m; sourceTree = "<group>"; };
+		0C56BB1A185727760040B4D3 /* BLTableDataOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTableDataOption.h; sourceTree = "<group>"; };
+		0C56BB1B185727760040B4D3 /* BLTableDataOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTableDataOption.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,7 @@
 				0C2B08B31840FCB7002DD471 /* BLTableFooterView.xib */,
 				0C2B08B41840FCB7002DD471 /* BLTableHeaderView.xib */,
 				0C2B08B51840FCB7002DD471 /* MainStoryboard.storyboard */,
+				0C56BB1518571DCE0040B4D3 /* BLDotChartCollectionViewCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -146,6 +155,10 @@
 				0C2B08C41840FCB7002DD471 /* UIView+LoadFromNib.m */,
 				0C56BB0F1856E3C40040B4D3 /* BLButton.h */,
 				0C56BB101856E3C40040B4D3 /* BLButton.m */,
+				0C56BB1718571F820040B4D3 /* BLDotChartCollectionViewCell.h */,
+				0C56BB1818571F820040B4D3 /* BLDotChartCollectionViewCell.m */,
+				0C56BB1A185727760040B4D3 /* BLTableDataOption.h */,
+				0C56BB1B185727760040B4D3 /* BLTableDataOption.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +305,7 @@
 				0C2B08CB1840FCB7002DD471 /* MainStoryboard.storyboard in Resources */,
 				0C2B08C61840FCB7002DD471 /* BLOptionsSectionHeaderView.xib in Resources */,
 				0C2B08C51840FCB7002DD471 /* BLNumbersCollectionViewCell.xib in Resources */,
+				0C56BB1618571DCE0040B4D3 /* BLDotChartCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,8 +323,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C56BB1918571F820040B4D3 /* BLDotChartCollectionViewCell.m in Sources */,
 				0C2B08CD1840FCB7002DD471 /* BLOptionsSectionHeaderView.m in Sources */,
 				0C2B08D11840FCB7002DD471 /* BLTableHeaderView.m in Sources */,
+				0C56BB1C185727760040B4D3 /* BLTableDataOption.m in Sources */,
 				0C2D32B5183F785400E1838E /* BLAppDelegate.m in Sources */,
 				0C2B08CC1840FCB7002DD471 /* BLNumbersCollectionViewCell.m in Sources */,
 				0C2D32B1183F785400E1838E /* main.m in Sources */,
