@@ -10,9 +10,6 @@
 		0C2B08C51840FCB7002DD471 /* BLNumbersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08AF1840FCB7002DD471 /* BLNumbersCollectionViewCell.xib */; };
 		0C2B08C61840FCB7002DD471 /* BLOptionsSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B01840FCB7002DD471 /* BLOptionsSectionHeaderView.xib */; };
 		0C2B08C71840FCB7002DD471 /* BLSymbolSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B11840FCB7002DD471 /* BLSymbolSectionHeaderView.xib */; };
-		0C2B08C81840FCB7002DD471 /* BLSymbolTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B21840FCB7002DD471 /* BLSymbolTableViewCell.xib */; };
-		0C2B08C91840FCB7002DD471 /* BLTableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B31840FCB7002DD471 /* BLTableFooterView.xib */; };
-		0C2B08CA1840FCB7002DD471 /* BLTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B41840FCB7002DD471 /* BLTableHeaderView.xib */; };
 		0C2B08CB1840FCB7002DD471 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2B08B51840FCB7002DD471 /* MainStoryboard.storyboard */; };
 		0C2B08CC1840FCB7002DD471 /* BLNumbersCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B08B81840FCB7002DD471 /* BLNumbersCollectionViewCell.m */; };
 		0C2B08CD1840FCB7002DD471 /* BLOptionsSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B08BA1840FCB7002DD471 /* BLOptionsSectionHeaderView.m */; };
@@ -53,9 +50,6 @@
 		0C2B08AF1840FCB7002DD471 /* BLNumbersCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLNumbersCollectionViewCell.xib; sourceTree = "<group>"; };
 		0C2B08B01840FCB7002DD471 /* BLOptionsSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLOptionsSectionHeaderView.xib; sourceTree = "<group>"; };
 		0C2B08B11840FCB7002DD471 /* BLSymbolSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSymbolSectionHeaderView.xib; sourceTree = "<group>"; };
-		0C2B08B21840FCB7002DD471 /* BLSymbolTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSymbolTableViewCell.xib; sourceTree = "<group>"; };
-		0C2B08B31840FCB7002DD471 /* BLTableFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLTableFooterView.xib; sourceTree = "<group>"; };
-		0C2B08B41840FCB7002DD471 /* BLTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLTableHeaderView.xib; sourceTree = "<group>"; };
 		0C2B08B51840FCB7002DD471 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		0C2B08B71840FCB7002DD471 /* BLNumbersCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLNumbersCollectionViewCell.h; sourceTree = "<group>"; };
 		0C2B08B81840FCB7002DD471 /* BLNumbersCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLNumbersCollectionViewCell.m; sourceTree = "<group>"; };
@@ -127,9 +121,6 @@
 				0C2B08AF1840FCB7002DD471 /* BLNumbersCollectionViewCell.xib */,
 				0C2B08B01840FCB7002DD471 /* BLOptionsSectionHeaderView.xib */,
 				0C2B08B11840FCB7002DD471 /* BLSymbolSectionHeaderView.xib */,
-				0C2B08B21840FCB7002DD471 /* BLSymbolTableViewCell.xib */,
-				0C2B08B31840FCB7002DD471 /* BLTableFooterView.xib */,
-				0C2B08B41840FCB7002DD471 /* BLTableHeaderView.xib */,
 				0C2B08B51840FCB7002DD471 /* MainStoryboard.storyboard */,
 				0C56BB1518571DCE0040B4D3 /* BLDotChartCollectionViewCell.xib */,
 			);
@@ -296,11 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C2B08CA1840FCB7002DD471 /* BLTableHeaderView.xib in Resources */,
 				0C2D32AF183F785400E1838E /* InfoPlist.strings in Resources */,
-				0C2B08C81840FCB7002DD471 /* BLSymbolTableViewCell.xib in Resources */,
 				0C2D32B7183F785400E1838E /* Images.xcassets in Resources */,
-				0C2B08C91840FCB7002DD471 /* BLTableFooterView.xib in Resources */,
 				0C2B08C71840FCB7002DD471 /* BLSymbolSectionHeaderView.xib in Resources */,
 				0C2B08CB1840FCB7002DD471 /* MainStoryboard.storyboard in Resources */,
 				0C2B08C61840FCB7002DD471 /* BLOptionsSectionHeaderView.xib in Resources */,

@@ -59,9 +59,6 @@
   @[@[@0.8, @"AAPL:US", @"Apple Inc"], @[@"519.80 USD", @"09:10"], @[@"-0.26%", @"-1.34"], @"7.990M", @80, @[@"-0.26%", @"-25.05"], @[@"+13.50%", @"+1,159.38"], @"9,746.25", @"8,586.88", @[@"15", @"2 lots"]]
                   ];
 
-    [self.symbolsTableView registerNib:[UINib nibWithNibName:@"BLSymbolTableViewCell" bundle:nil] forCellReuseIdentifier:@"BLSymbolTableViewCell"];
-    self.symbolsTableView.tableHeaderView = [BLTableHeaderView loadInstanceFromNib];
-    self.symbolsTableView.tableFooterView = [BLTableFooterView loadInstanceFromNib];
     self.sectionHeaderView.rowData = self.tableDataHeaderTexts;
     [self.symbolsTableView reloadData];
 }
